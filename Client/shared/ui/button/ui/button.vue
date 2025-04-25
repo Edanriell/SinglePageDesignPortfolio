@@ -43,6 +43,7 @@
 		background: var(--button-primary-color);
 		min-height: 44rem;
 		color: var(--text-primary-color);
+		text-transform: capitalize;
 
 		@media (width >= 768px) {
 			min-height: 56rem;

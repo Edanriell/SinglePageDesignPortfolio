@@ -1,9 +1,9 @@
-<script></script>
+<script lang="ts" setup>
+	import { Header } from "@widgets/header/ui";
+</script>
 
 <template>
-	<header>
-		<h2>Header</h2>
-	</header>
+	<Header />
 	<main>
 		<h1>Layout</h1>
 		<slot />
