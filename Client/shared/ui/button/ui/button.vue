@@ -21,7 +21,9 @@
 	<button
 		:style="{
 			'--button-primary-color': primaryColor,
-			'--button-secondary-color': secondaryColor
+			'--button-secondary-color': secondaryColor,
+			'--text-primary-color': textPrimaryColor,
+			'--text-secondary-color': textSecondaryColor
 		}"
 		:type="type"
 		class="button"
@@ -40,7 +42,7 @@
 		line-height: 200%;
 		background: var(--button-primary-color);
 		min-height: 44rem;
-		color: var(--light-cream);
+		color: var(--text-primary-color);
 
 		@media (width >= 768px) {
 			min-height: 56rem;
@@ -51,6 +53,7 @@
 
 		&:hover {
 			background: var(--button-secondary-color);
+			color: var(--text-secondary-color);
 		}
 	}
 </style>
