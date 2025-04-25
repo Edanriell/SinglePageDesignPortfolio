@@ -21,6 +21,10 @@ export default defineNuxtConfig({
 		"@shared": "~/shared"
 	},
 
+	dir: {
+		layouts: "./widgets/layout"
+	},
+
 	fonts: {
 		families: [
 			{
