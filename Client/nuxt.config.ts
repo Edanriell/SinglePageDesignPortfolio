@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "url";
+
 export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
@@ -13,12 +14,12 @@ export default defineNuxtConfig({
 	],
 
 	alias: {
-		"@app": "~/app",
-		"@pages": "~/pages",
-		"@widgets": "~/widgets",
-		"@features": "~/features",
-		"@entities": "~/entities",
-		"@shared": "~/shared"
+		"@app": fileURLToPath(new URL("./app", import.meta.url)),
+		"@shared": fileURLToPath(new URL("./shared", import.meta.url)),
+		"@pages": fileURLToPath(new URL("./pages", import.meta.url)),
+		"@nuxt-pages": fileURLToPath(new URL("./nuxt-pages", import.meta.url)),
+		"@features": fileURLToPath(new URL("./features", import.meta.url)),
+		"@widgets": fileURLToPath(new URL("./widgets", import.meta.url))
 	},
 
 	dir: {

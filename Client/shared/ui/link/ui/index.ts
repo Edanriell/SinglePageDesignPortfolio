@@ -1,3 +1,3 @@
-import Link from "./link";
+import Link from "./link.vue";
 
 export { Link };
