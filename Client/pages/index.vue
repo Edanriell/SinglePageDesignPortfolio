@@ -1,13 +1,14 @@
 <script lang="ts" setup>
-	import { HomePage } from "@nuxt-pages/home/ui";
+	import { HeaderWidget } from "@widgets/header/ui";
+	import { FooterWidget } from "@widgets/footer/ui";
 
 	definePageMeta({
-		layout: "root-ui-root-layout"
+		layout: "default-ui-layout",
+		header: HeaderWidget,
+		footer: FooterWidget
 	});
 </script>
 
 <template>
-	<main>
-		<HomePage />
-	</main>
+	<h1>Main Page</h1>
 </template>
