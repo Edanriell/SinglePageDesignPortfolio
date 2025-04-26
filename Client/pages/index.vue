@@ -1,11 +1,13 @@
-<script>
+<script lang="ts" setup>
+	import { HomePage } from "@nuxt-pages/home/ui";
+
 	definePageMeta({
 		layout: "root-ui-root-layout"
 	});
 </script>
 
 <template>
-	<section>
-		<h2>Section</h2>
-	</section>
+	<main>
+		<HomePage />
+	</main>
 </template>
