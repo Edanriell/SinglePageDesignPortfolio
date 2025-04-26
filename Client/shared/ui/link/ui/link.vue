@@ -35,7 +35,7 @@
 <style scoped>
 	.link {
 		border-radius: 28rem;
-		margin: 8rem 28rem 8rem 27rem;
+		padding: 8rem 28rem 8rem 27rem;
 		font-family: var(--font-family);
 		font-weight: 700;
 		font-size: 14rem;
@@ -47,7 +47,7 @@
 
 		@media (width >= 768px) {
 			min-height: 56rem;
-			margin: 14rem 45rem 14rem 45rem;
+			padding: 14rem 45rem 14rem 45rem;
 			font-size: 16rem;
 			line-height: 175%;
 		}

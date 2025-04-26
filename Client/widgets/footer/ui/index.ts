@@ -1,3 +1,3 @@
-import Footer from "./footer.vue";
+import FooterWidget from "./footer-widget.vue";
 
-export { Footer };
+export { FooterWidget };

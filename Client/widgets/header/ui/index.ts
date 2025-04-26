@@ -1,3 +1,3 @@
-import Header from "./header.vue";
+import HeaderWidget from "./header-widget.vue";
 
-export { Header };
+export { HeaderWidget };
