@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 	import { HeaderWidget } from "@widgets/header/ui";
 	import { FooterWidget } from "@widgets/footer/ui";
+	import { HeroWidget } from "@widgets/hero/ui";
 
 	definePageMeta({
 		layout: "default-ui-layout",
@@ -10,5 +11,5 @@
 </script>
 
 <template>
-	<h1>Main Page</h1>
+	<HeroWidget />
 </template>
