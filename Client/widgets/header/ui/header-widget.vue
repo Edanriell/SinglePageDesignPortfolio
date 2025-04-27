@@ -16,14 +16,17 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 16rem;
+		padding: 0 16rem;
+		margin: 16rem 0;
 
 		@media (width >= 768px) {
-			margin: 34rem 40rem;
+			padding: 0 34rem;
+			margin: 40rem 0;
 		}
 
 		@media (width >= 1440px) {
-			margin: 34rem 165rem;
+			padding: 0 165rem;
+			margin: 34rem 0;
 		}
 	}
 </style>
