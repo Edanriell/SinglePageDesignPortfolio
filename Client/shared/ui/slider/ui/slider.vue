@@ -1,7 +1,13 @@
 <script></script>
 
 <template>
-	<section></section>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 </template>
 
 <style></style>
