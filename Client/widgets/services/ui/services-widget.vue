@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-	type Service = {
+	export type Service = {
 		name: string;
 		image?: string;
 		style?: Record<string, string>;
