@@ -16,17 +16,23 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 16rem;
-		margin: 16rem 0;
+		margin-left: 16rem;
+		margin-right: 16rem;
+		padding-top: 32rem;
+		padding-bottom: 32rem;
 
 		@media (width >= 768px) {
-			padding: 0 34rem;
-			margin: 40rem 0;
+			margin-left: 40rem;
+			margin-right: 40rem;
+			padding-top: 56rem;
+			padding-bottom: 56rem;
 		}
 
 		@media (width >= 1440px) {
-			padding: 0 165rem;
-			margin: 34rem 0;
+			margin-left: 165rem;
+			margin-right: 165rem;
+			padding-top: 56rem;
+			padding-bottom: 64rem;
 		}
 	}
 </style>
