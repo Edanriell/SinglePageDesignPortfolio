@@ -2,12 +2,12 @@
 	import { HeaderWidget } from "@widgets/header/ui";
 	import { FooterWidget } from "@widgets/footer/ui";
 	import { HeroWidget } from "@widgets/hero/ui";
-	import { ServicesWidget } from "@widgets/services/ui";
+	import { type Service, ServicesWidget } from "@widgets/services/ui";
 
 	definePageMeta({
 		layout: "default-ui-layout",
-		header: HeaderWidget,
-		footer: FooterWidget
+		header: markRaw(HeaderWidget),
+		footer: markRaw(FooterWidget)
 	});
 
 	const services = [
@@ -187,6 +187,10 @@
 </script>
 
 <template>
-	<HeroWidget />
-	<ServicesWidget :services="services" />
+	<HeroWidget
+		text="With over ten years of experience in various design disciplines, I’m your one-stop shop
+			for your design needs."
+		title="Design solutions made easy"
+	/>
+	<ServicesWidget :services="services as Service[]" />
 </template>

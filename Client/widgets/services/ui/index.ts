@@ -1,3 +1,3 @@
-import ServicesWidget from "./services-widget.vue";
+import ServicesWidget, { type Service } from "./services-widget.vue";
 
-export { ServicesWidget };
+export { ServicesWidget, type Service };

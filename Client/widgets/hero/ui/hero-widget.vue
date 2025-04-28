@@ -1,11 +1,15 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+	defineProps<{
+		title: string;
+		text: string;
+	}>();
+</script>
 
 <template>
 	<section class="hero">
-		<h1 class="hero__title">Design solutions made easy</h1>
+		<h1 class="hero__title">{{ title }}</h1>
 		<p class="hero__text">
-			With over ten years of experience in various design disciplines, I’m your one-stop shop
-			for your design needs.
+			{{ text }}
 		</p>
 	</section>
 </template>
