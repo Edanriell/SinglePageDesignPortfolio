@@ -12,23 +12,29 @@
 
 <style scoped>
 	.hero {
-		padding: 0 16rem 0 16rem;
-		margin: 16rem 0 16rem 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 16rem;
+		margin-left: 16rem;
+		margin-right: 16rem;
+		padding-top: 16rem;
+		padding-bottom: 16rem;
 
 		@media (width >= 768px) {
-			padding: 40rem 0 40rem 0;
-			margin: 0 30rem 0 32rem;
+			margin-left: 40rem;
+			margin-right: 40rem;
+			padding-top: 30rem;
+			padding-bottom: 32rem;
 			gap: 27rem;
 		}
 
 		@media (width >= 1440px) {
-			padding: 165rem 0 165rem 0;
-			margin: 0 32rem 0 40rem;
+			margin-left: 165rem;
+			margin-right: 165rem;
+			padding-top: 32rem;
+			padding-bottom: 40rem;
 			gap: 23rem;
 		}
 	}
