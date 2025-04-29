@@ -2,11 +2,21 @@
 
 <template>
 	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>
+			<h2></h2>
+		</li>
+		<li>
+			<h2></h2>
+		</li>
+		<li>
+			<h2></h2>
+		</li>
+		<li>
+			<h2></h2>
+		</li>
+		<li>
+			<h2></h2>
+		</li>
 	</ul>
 </template>
 
