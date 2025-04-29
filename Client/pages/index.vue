@@ -3,6 +3,7 @@
 	import { FooterWidget } from "@widgets/footer/ui";
 	import { HeroWidget } from "@widgets/hero/ui";
 	import { type Service, ServicesWidget } from "@widgets/services/ui";
+	import { AboutAuthorWidget } from "@widgets/about-author/ui/";
 
 	definePageMeta({
 		layout: "default-ui-layout",
@@ -193,4 +194,11 @@
 		title="Design solutions made easy"
 	/>
 	<ServicesWidget :services="services as Service[]" />
+	<AboutAuthorWidget
+		imageSrc="/images/amy-image.png"
+		text="I love working with others to create beautiful design solutions. I’ve designed
+					everything from brand illustrations to complete mobile apps. I’m also handy with
+					a camera!"
+		title="I’m Amy, and I’d love to work on your next project"
+	/>
 </template>

@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 	],
 
 	alias: {
+		"@public": fileURLToPath(new URL("./public", import.meta.url)),
 		"@app": fileURLToPath(new URL("./app", import.meta.url)),
 		"@shared": fileURLToPath(new URL("./shared", import.meta.url)),
 		"@pages": fileURLToPath(new URL("./pages", import.meta.url)),
