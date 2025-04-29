@@ -1,36 +1,5 @@
 <script></script>
 
-<template>
-	<ul>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-		<li>
-			<h2>Slide</h2>
-			<p>Description</p>
-		</li>
-	</ul>
-</template>
+<template></template>
 
 <style></style>
