@@ -1,5 +1,7 @@
 <script></script>
 
-<template></template>
+<template>
+	<ul></ul>
+</template>
 
 <style></style>
