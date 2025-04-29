@@ -2,7 +2,7 @@
 
 <template>
 	<section>
-		<h2></h2>
+		<h2>My Work</h2>
 	</section>
 </template>
 
