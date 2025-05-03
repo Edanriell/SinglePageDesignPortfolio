@@ -1,7 +1,12 @@
 <script></script>
 
 <template>
-	<ul></ul>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
 </template>
 
 <style></style>
