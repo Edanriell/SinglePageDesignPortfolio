@@ -3,7 +3,7 @@
 <template>
 	<article>
 		<ul>
-			<li>sdfsdff</li>
+			asdasd
 		</ul>
 	</article>
 </template>
