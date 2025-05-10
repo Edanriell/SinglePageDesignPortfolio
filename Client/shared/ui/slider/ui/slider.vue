@@ -2,9 +2,7 @@
 
 <template>
 	<article>
-		<ul>
-			asdasd
-		</ul>
+		<ul></ul>
 	</article>
 </template>
 
