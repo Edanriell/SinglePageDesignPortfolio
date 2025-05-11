@@ -1,9 +1,7 @@
 <script></script>
 
 <template>
-	<article>
-		<ul></ul>
-	</article>
+	<article></article>
 </template>
 
 <style></style>
