@@ -2,6 +2,7 @@
 	import { HeaderWidget } from "@widgets/header/ui";
 	import { FooterWidget } from "@widgets/footer/ui";
 	import { HeroWidget } from "@widgets/hero/ui";
+	import { ProjectsWidget } from "@widgets/projects/ui";
 	import { type Service, ServicesWidget } from "@widgets/services/ui";
 	import { AboutAuthorWidget } from "@widgets/about-author/ui/";
 
@@ -201,4 +202,5 @@
 					a camera!"
 		title="I’m Amy, and I’d love to work on your next project"
 	/>
+	<ProjectsWidget />
 </template>
