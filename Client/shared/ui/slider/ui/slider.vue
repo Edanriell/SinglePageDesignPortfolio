@@ -1,7 +1,13 @@
 <script></script>
 
 <template>
-	<article></article>
+	<article>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</article>
 </template>
 
 <style></style>
