@@ -47,6 +47,11 @@
 		position: relative;
 		padding-top: 50rem;
 		padding-bottom: 50rem;
+
+		@media (width >= 768px) {
+			padding-top: 60rem;
+			padding-bottom: 60rem;
+		}
 	}
 
 	.projects__title {
@@ -59,6 +64,7 @@
 
 		@medai (width >= 768px) {
 			font-size: 32rem;
+			margin-bottom: 56rem;
 		}
 	}
 </style>
