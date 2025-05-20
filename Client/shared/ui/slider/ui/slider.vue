@@ -143,8 +143,8 @@
 	}
 
 	.slider__navigation-button {
-		width: 64rem;
-		height: 64rem;
+		width: 64rem !important;
+		height: 64rem !important;
 	}
 
 	.arrow-icon {
