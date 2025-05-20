@@ -1,13 +1,47 @@
 <script lang="ts" setup>
 	import { Swiper, SwiperSlide } from "swiper/vue";
 	import { A11y } from "swiper/modules";
+	import type { Swiper as SwiperType } from "swiper";
 
 	import "swiper/css";
 
-	const swiperInstance = ref(null);
+	const swiperInstance = ref<SwiperType | null>(null);
 	const modules = [A11y];
 
-	const onSwiper = (swiper) => {
+	const slides = [
+		{
+			imageSrc: "/images/slider/image-1.jpg",
+			imageTitle: "Web Application Design",
+			imageDescription:
+				"Modern responsive web app with user-centered interface and intuitive navigation"
+		},
+		{
+			imageSrc: "/images/slider/image-2.jpg",
+			imageTitle: "E-commerce Platform",
+			imageDescription:
+				"Fully-featured online store with product catalog, shopping cart, and secure checkout"
+		},
+		{
+			imageSrc: "/images/slider/image-3.jpg",
+			imageTitle: "Mobile App Interface",
+			imageDescription:
+				"Cross-platform mobile application with seamless user experience and clean design"
+		},
+		{
+			imageSrc: "/images/slider/image-4.jpg",
+			imageTitle: "Brand Identity System",
+			imageDescription:
+				"Comprehensive branding package including logo design, color scheme, and typography"
+		},
+		{
+			imageSrc: "/images/slider/image-5.jpg",
+			imageTitle: "UI Component Library",
+			imageDescription:
+				"Custom component library with consistent design language for rapid development"
+		}
+	];
+
+	const onSwiper = (swiper: SwiperType) => {
 		console.log(swiper);
 		swiperInstance.value = swiper;
 	};
@@ -37,11 +71,25 @@
 		class="slider"
 		@swiper="onSwiper"
 	>
-		<swiper-slide class="slider__slide">Slide 1</swiper-slide>
-		<swiper-slide class="slider__slide">Slide 2</swiper-slide>
-		<swiper-slide class="slider__slide">Slide 3</swiper-slide>
-		<swiper-slide class="slider__slide">Slide 4</swiper-slide>
-		<swiper-slide class="slider__slide">Slide 5</swiper-slide>
+		<swiper-slide
+			v-for="({ imageDescription, imageSrc, imageTitle }, index) in slides"
+			:key="index"
+			class="slider__slide slide"
+		>
+			<figure class="slide__inner-wrapper">
+				<NuxtImg
+					:alt="imageDescription"
+					:src="imageSrc"
+					class="slide__image"
+					format="webp"
+					loading="eager"
+				/>
+				<figcaption class="slide__content">
+					<h3 class="visually-hidden">{{ imageTitle }}</h3>
+					<p class="visually-hidden">{{ imageDescription }}</p>
+				</figcaption>
+			</figure>
+		</swiper-slide>
 	</swiper>
 	<div class="swiper-nav-btns">
 		<button class="nav-btn prev-btn" @click="slidePrev">Prev</button>
@@ -60,5 +108,23 @@
 		height: 180rem;
 		background: #d8d8d8;
 		max-width: 270rem;
+	}
+
+	.slide {
+		overflow: hidden;
+	}
+
+	.slide__inner-wrapper {
+		position: relative;
+	}
+
+	.slide__image {
+		object-fit: cover;
+		width: 100%;
+		height: 180rem;
+	}
+
+	.slide__content {
+		position: relative;
 	}
 </style>
