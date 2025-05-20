@@ -52,6 +52,11 @@
 			padding-top: 60rem;
 			padding-bottom: 60rem;
 		}
+
+		@media (width >= 1440px) {
+			padding-top: 44rem;
+			padding-bottom: 44rem;
+		}
 	}
 
 	.projects__title {
