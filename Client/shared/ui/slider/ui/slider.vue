@@ -3,6 +3,8 @@
 	import { A11y } from "swiper/modules";
 	import type { Swiper as SwiperType } from "swiper";
 
+	import { Button } from "@shared/ui/button/ui";
+
 	import "swiper/css";
 
 	type Slide = {
@@ -66,8 +68,23 @@
 		</swiper-slide>
 	</swiper>
 	<div class="slider__navigation-buttons-wrapper">
-		<button class="nav-btn prev-btn" @click="slidePrev">Prev</button>
-		<button class="nav-btn next-btn" @click="slideNext">Next</button>
+		<Button
+			class="slider__navigation-button"
+			primaryColor="#030303"
+			secondaryColor="#755cde"
+			shape="circular"
+			@click="slidePrev"
+		>
+			<NuxtImg class="arrow-icon" loading="eager" src="/images/arrow-left.svg" />
+		</Button>
+		<Button
+			class="slider__navigation-button"
+			primaryColor="#030303"
+			secondaryColor="#755cde"
+			shape="circular"
+			@click="slideNext"
+			><NuxtImg class="arrow-icon" loading="eager" src="/images/arrow-right.svg"
+		/></Button>
 	</div>
 </template>
 
@@ -118,19 +135,20 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 32rem;
+		column-gap: 16rem;
 
 		@media (width >= 768px) {
 			margin-top: 56rem;
 		}
 	}
 
-	.prev-btn {
-		background: green;
-		height: 40rem;
+	.slider__navigation-button {
+		width: 64rem;
+		height: 64rem;
 	}
 
-	.next-btn {
-		background: aqua;
-		height: 60rem;
+	.arrow-icon {
+		width: 16rem;
+		height: 17rem;
 	}
 </style>
