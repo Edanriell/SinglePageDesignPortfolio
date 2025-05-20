@@ -66,7 +66,6 @@
 		:loop="true"
 		:modules="modules"
 		:slidesPerView="'auto'"
-		:space-between="15"
 		:speed="500"
 		class="slider"
 		@swiper="onSwiper"
@@ -108,6 +107,13 @@
 		height: 180rem;
 		background: #d8d8d8;
 		max-width: 270rem;
+		margin-right: 15rem;
+
+		@media (width >= 768px) {
+			max-width: 540rem;
+			height: 360rem;
+			margin-right: 30rem;
+		}
 	}
 
 	.slide {
@@ -122,6 +128,10 @@
 		object-fit: cover;
 		width: 100%;
 		height: 180rem;
+
+		@media (width >= 768px) {
+			height: 360rem;
+		}
 	}
 
 	.slide__content {
