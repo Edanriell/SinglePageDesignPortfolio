@@ -90,7 +90,7 @@
 			</figure>
 		</swiper-slide>
 	</swiper>
-	<div class="swiper-nav-btns">
+	<div class="slider__navigation-buttons-wrapper">
 		<button class="nav-btn prev-btn" @click="slidePrev">Prev</button>
 		<button class="nav-btn next-btn" @click="slideNext">Next</button>
 	</div>
@@ -136,5 +136,26 @@
 
 	.slide__content {
 		position: relative;
+	}
+
+	.slider__navigation-buttons-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 32rem;
+
+		@media (width >= 768px) {
+			margin-top: 56rem;
+		}
+	}
+
+	.prev-btn {
+		background: green;
+		height: 40rem;
+	}
+
+	.next-btn {
+		background: aqua;
+		height: 60rem;
 	}
 </style>
