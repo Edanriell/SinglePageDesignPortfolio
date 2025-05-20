@@ -5,41 +5,16 @@
 
 	import "swiper/css";
 
+	type Slide = {
+		imageSrc: string;
+		title: string;
+		description: string;
+	};
+
+	defineProps<{ slides: Slide[] }>();
+
 	const swiperInstance = ref<SwiperType | null>(null);
 	const modules = [A11y];
-
-	const slides = [
-		{
-			imageSrc: "/images/slider/image-1.jpg",
-			imageTitle: "Web Application Design",
-			imageDescription:
-				"Modern responsive web app with user-centered interface and intuitive navigation"
-		},
-		{
-			imageSrc: "/images/slider/image-2.jpg",
-			imageTitle: "E-commerce Platform",
-			imageDescription:
-				"Fully-featured online store with product catalog, shopping cart, and secure checkout"
-		},
-		{
-			imageSrc: "/images/slider/image-3.jpg",
-			imageTitle: "Mobile App Interface",
-			imageDescription:
-				"Cross-platform mobile application with seamless user experience and clean design"
-		},
-		{
-			imageSrc: "/images/slider/image-4.jpg",
-			imageTitle: "Brand Identity System",
-			imageDescription:
-				"Comprehensive branding package including logo design, color scheme, and typography"
-		},
-		{
-			imageSrc: "/images/slider/image-5.jpg",
-			imageTitle: "UI Component Library",
-			imageDescription:
-				"Custom component library with consistent design language for rapid development"
-		}
-	];
 
 	const onSwiper = (swiper: SwiperType) => {
 		console.log(swiper);
@@ -71,21 +46,21 @@
 		@swiper="onSwiper"
 	>
 		<swiper-slide
-			v-for="({ imageDescription, imageSrc, imageTitle }, index) in slides"
+			v-for="({ description, imageSrc, title }, index) in slides"
 			:key="index"
 			class="slider__slide slide"
 		>
 			<figure class="slide__inner-wrapper">
 				<NuxtImg
-					:alt="imageDescription"
+					:alt="description"
 					:src="imageSrc"
 					class="slide__image"
 					format="webp"
 					loading="eager"
 				/>
 				<figcaption class="slide__content">
-					<h3 class="visually-hidden">{{ imageTitle }}</h3>
-					<p class="visually-hidden">{{ imageDescription }}</p>
+					<h3 class="visually-hidden">{{ title }}</h3>
+					<p class="visually-hidden">{{ description }}</p>
 				</figcaption>
 			</figure>
 		</swiper-slide>
