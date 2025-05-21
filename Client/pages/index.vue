@@ -3,8 +3,10 @@
 	import { FooterWidget } from "@widgets/footer/ui";
 	import { HeroWidget } from "@widgets/hero/ui";
 	import { ProjectsWidget } from "@widgets/projects/ui";
-	import { type Service, ServicesWidget } from "@widgets/services/ui";
+	import type { Service } from "@widgets/services/ui";
+	import { ServicesWidget } from "@widgets/services/ui";
 	import { AboutAuthorWidget } from "@widgets/about-author/ui/";
+	import { CallBookingWidget } from "@widgets/call-booking/ui";
 
 	definePageMeta({
 		layout: "default-ui-layout",
@@ -236,4 +238,8 @@
 		title="I’m Amy, and I’d love to work on your next project"
 	/>
 	<ProjectsWidget :projects="projects" />
+	<CallBookingWidget
+		text="I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there."
+		title="Book a call with me"
+	/>
 </template>

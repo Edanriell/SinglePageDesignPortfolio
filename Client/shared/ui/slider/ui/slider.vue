@@ -21,6 +21,12 @@
 	const onSwiper = (swiper: SwiperType) => {
 		console.log(swiper);
 		swiperInstance.value = swiper;
+
+		// Debug loop settings
+		console.log("Loop enabled:", swiper.params.loop);
+		console.log("Loop additional slides:", swiper.params.loopAdditionalSlides);
+		console.log("Original slides count:", swiper.slides ? swiper.slides.length / 3 : 0);
+		console.log("Total slides in DOM:", swiper.slides ? swiper.slides.length : 0);
 	};
 
 	const slidePrev = () => {
