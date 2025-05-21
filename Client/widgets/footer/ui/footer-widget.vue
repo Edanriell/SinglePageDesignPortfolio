@@ -18,7 +18,7 @@
 		align-items: center;
 		margin-left: 16rem;
 		margin-right: 16rem;
-		padding-top: 32rem;
+		padding-top: 20rem;
 		padding-bottom: 32rem;
 
 		@media (width >= 768px) {
