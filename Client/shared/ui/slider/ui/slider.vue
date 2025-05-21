@@ -7,7 +7,7 @@
 
 	import "swiper/css";
 
-	type Slide = {
+	export type Slide = {
 		imageSrc: string;
 		title: string;
 		description: string;
