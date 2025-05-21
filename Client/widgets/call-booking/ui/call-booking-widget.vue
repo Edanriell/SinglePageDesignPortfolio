@@ -23,6 +23,12 @@
 		padding-top: 50rem;
 		padding-bottom: 20rem;
 		margin: 0 16rem;
+
+		@media (width >= 768px) {
+			padding-top: 60rem;
+			padding-bottom: 28rem;
+			margin: 0 40rem;
+		}
 	}
 
 	.call-booking__wrapper {
@@ -33,6 +39,11 @@
 		align-items: center;
 		row-gap: 24rem;
 		padding: 49rem 24rem 48rem 24rem;
+
+		@media (width >= 768px) {
+			row-gap: 26rem;
+			padding: 56rem 75rem 75rem 64rem;
+		}
 	}
 
 	.call-booking__title {
@@ -41,6 +52,10 @@
 		font-size: 26rem;
 		text-align: center;
 		color: var(--light-cream);
+
+		@media (width >= 768px) {
+			font-size: 32rem;
+		}
 	}
 
 	.call-booking__text {
@@ -50,5 +65,10 @@
 		line-height: 162%;
 		text-align: center;
 		color: var(--light-cream);
+
+		@media (width >= 768px) {
+			font-size: 18rem;
+			line-height: 156%;
+		}
 	}
 </style>
