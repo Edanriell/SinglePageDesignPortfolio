@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-	import { Link } from "#shared/ui/link/ui";
+	import { Link } from "@shared/ui/link/ui";
 </script>
 
 <template>
@@ -13,7 +13,11 @@
 					from there.
 				</p>
 			</div>
-			<Link :href="linkHref" primaryColor="#eb7565" secondaryColor="#f6a560"
+			<Link
+				:href="linkHref"
+				class="call-booking__link"
+				primaryColor="#eb7565"
+				secondaryColor="#f6a560"
 				>Free Consultation</Link
 			>
 		</div>
@@ -73,6 +77,8 @@
 
 		@media (width >= 1440px) {
 			row-gap: 25rem;
+			margin-right: 176rem;
+			align-items: flex-start;
 		}
 	}
 
@@ -87,8 +93,9 @@
 			font-size: 32rem;
 		}
 
-		@media (width >= 768px) {
+		@media (width >= 1440px) {
 			font-size: 40rem;
+			text-align: left;
 		}
 	}
 
@@ -103,6 +110,16 @@
 		@media (width >= 768px) {
 			font-size: 18rem;
 			line-height: 156%;
+		}
+
+		@media (width >= 1440px) {
+			text-align: left;
+		}
+	}
+
+	.call-booking__link {
+		@media (width >= 1440px) {
+			flex: 0 0 auto;
 		}
 	}
 </style>

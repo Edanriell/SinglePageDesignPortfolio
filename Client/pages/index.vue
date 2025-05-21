@@ -219,7 +219,7 @@
 			title: "UI Component Library",
 			description:
 				"Custom component library with consistent design language for rapid development"
-		}
+		},
 	];
 </script>
 
