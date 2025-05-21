@@ -5,12 +5,14 @@
 <template>
 	<section class="call-booking">
 		<div class="call-booking__wrapper">
-			<h2 class="call-booking__title">Book a call with me</h2>
-			<p class="call-booking__text">
-				I’d love to have a chat to see how I can help you. The best first step is for us to
-				discuss your project during a free consultation. Then we can move forward from
-				there.
-			</p>
+			<div class="call-booking__content">
+				<h2 class="call-booking__title">Book a call with me</h2>
+				<p class="call-booking__text">
+					I’d love to have a chat to see how I can help you. The best first step is for us
+					to discuss your project during a free consultation. Then we can move forward
+					from there.
+				</p>
+			</div>
 			<Link :href="linkHref" primaryColor="#eb7565" secondaryColor="#f6a560"
 				>Free Consultation</Link
 			>
@@ -29,6 +31,12 @@
 			padding-bottom: 28rem;
 			margin: 0 40rem;
 		}
+
+		@media (width >= 1440px) {
+			padding-top: 44rem;
+			padding-bottom: 28rem;
+			margin: 0 165rem;
+		}
 	}
 
 	.call-booking__wrapper {
@@ -44,6 +52,28 @@
 			row-gap: 26rem;
 			padding: 56rem 75rem 75rem 64rem;
 		}
+
+		@media (width >= 1440px) {
+			row-gap: 25rem;
+			padding: 81rem 95rem 80rem 65rem;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.call-booking__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 24rem;
+
+		@media (width >= 768px) {
+			row-gap: 26rem;
+		}
+
+		@media (width >= 1440px) {
+			row-gap: 25rem;
+		}
 	}
 
 	.call-booking__title {
@@ -55,6 +85,10 @@
 
 		@media (width >= 768px) {
 			font-size: 32rem;
+		}
+
+		@media (width >= 768px) {
+			font-size: 40rem;
 		}
 	}
 
