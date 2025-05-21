@@ -219,7 +219,7 @@
 			title: "UI Component Library",
 			description:
 				"Custom component library with consistent design language for rapid development"
-		},
+		}
 	];
 </script>
 
@@ -238,5 +238,8 @@
 		title="I’m Amy, and I’d love to work on your next project"
 	/>
 	<ProjectsWidget :projects="projects" />
-	<CallBookingWidget />
+	<CallBookingWidget
+		text="I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there."
+		title="Book a call with me"
+	/>
 </template>

@@ -1,16 +1,25 @@
 <script lang="ts" setup>
 	import { Link } from "@shared/ui/link/ui";
+
+	withDefaults(
+		defineProps<{
+			title: string;
+			text: string;
+			linkHref?: string;
+		}>(),
+		{
+			linkHref: "#"
+		}
+	);
 </script>
 
 <template>
 	<section class="call-booking">
 		<div class="call-booking__wrapper">
 			<div class="call-booking__content">
-				<h2 class="call-booking__title">Book a call with me</h2>
+				<h2 class="call-booking__title">{{ title }}</h2>
 				<p class="call-booking__text">
-					I’d love to have a chat to see how I can help you. The best first step is for us
-					to discuss your project during a free consultation. Then we can move forward
-					from there.
+					{{ text }}
 				</p>
 			</div>
 			<Link
