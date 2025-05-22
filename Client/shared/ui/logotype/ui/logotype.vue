@@ -19,6 +19,7 @@
 	<a :href="href">
 		<svg
 			v-if="size === 'small'"
+			class="logotype"
 			fill="none"
 			height="48"
 			viewBox="0 0 48 48"
@@ -30,6 +31,7 @@
 		</svg>
 		<svg
 			v-else
+			class="logotype"
 			fill="none"
 			height="64"
 			viewBox="0 0 64 64"
@@ -41,3 +43,9 @@
 		</svg>
 	</a>
 </template>
+
+<style scoped>
+	.logotype {
+		display: block;
+	}
+</style>
