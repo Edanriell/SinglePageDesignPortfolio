@@ -2,15 +2,19 @@
 	import type { Slide } from "@shared/ui/slider/ui";
 	import { Slider } from "@shared/ui/slider/ui";
 
+	import { useArrayMultiplier } from "../lib/composables";
+
 	type Project = Slide;
 
-	defineProps<{ projects: Project[] }>();
+	const props = defineProps<{ projects: Project[] }>();
+
+	const { multipliedArray: multipliedProjects } = useArrayMultiplier(props.projects);
 </script>
 
 <template>
 	<section class="projects">
 		<h2 class="projects__title">My Work</h2>
-		<Slider :slides="projects" />
+		<Slider :slides="multipliedProjects" />
 	</section>
 </template>
 
