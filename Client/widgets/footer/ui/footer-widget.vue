@@ -1,11 +1,15 @@
 <script lang="ts" setup>
 	import { Logotype } from "@shared/ui/logotype/ui";
 	import { Link } from "@shared/ui/link/ui";
+	import { useWindowSize } from "@shared/lib/composables";
+
+	const windowSize = useWindowSize();
 </script>
 
 <template>
 	<footer class="footer">
-		<Logotype />
+		<Logotype v-if="windowSize.width && windowSize.width >= 768" size="large" />
+		<Logotype v-else size="small" />
 		<Link>Free Consultation</Link>
 	</footer>
 </template>
