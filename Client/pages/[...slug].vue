@@ -10,7 +10,9 @@
 			<p class="error__description">
 				Sorry, the page you're looking for doesn't exist or has been moved.
 			</p>
-			<Link href="/">Back to Home</Link>
+			<ClientOnly>
+				<Link href="/">Back to Home</Link>
+			</ClientOnly>
 		</div>
 	</section>
 </template>

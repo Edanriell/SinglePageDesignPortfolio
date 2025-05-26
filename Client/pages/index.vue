@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-	import { HeaderWidget } from "@widgets/header/ui";
-	import { FooterWidget } from "@widgets/footer/ui";
 	import { HeroWidget } from "@widgets/hero/ui";
 	import { ProjectsWidget } from "@widgets/projects/ui";
 	import type { Service } from "@widgets/services/ui";
@@ -8,10 +6,20 @@
 	import { AboutAuthorWidget } from "@widgets/about-author/ui/";
 	import { CallBookingWidget } from "@widgets/call-booking/ui";
 
+	const ClientHeaderWidget = defineAsyncComponent({
+		loader: () => import("@widgets/header/ui").then((m) => m.HeaderWidget),
+		suspensible: false
+	});
+
+	const ClientFooterWidget = defineAsyncComponent({
+		loader: () => import("@widgets/footer/ui").then((m) => m.FooterWidget),
+		suspensible: false
+	});
+
 	definePageMeta({
 		layout: "default-ui-layout",
-		header: markRaw(HeaderWidget),
-		footer: markRaw(FooterWidget)
+		header: markRaw(ClientHeaderWidget),
+		footer: markRaw(ClientFooterWidget)
 	});
 
 	const services = [

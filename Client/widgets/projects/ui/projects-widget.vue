@@ -14,7 +14,9 @@
 <template>
 	<section class="projects">
 		<h2 class="projects__title">My Work</h2>
-		<Slider :slides="multipliedProjects" />
+		<ClientOnly>
+			<Slider :slides="multipliedProjects" />
+		</ClientOnly>
 	</section>
 </template>
 

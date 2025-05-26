@@ -8,9 +8,11 @@
 
 <template>
 	<footer class="footer">
-		<Logotype v-if="windowSize.width && windowSize.width >= 768" size="large" />
-		<Logotype v-else size="small" />
-		<Link>Free Consultation</Link>
+		<ClientOnly>
+			<Logotype v-if="windowSize.width && windowSize.width >= 768" size="large" />
+			<Logotype v-else size="small" />
+			<Link>Free Consultation</Link>
+		</ClientOnly>
 	</footer>
 </template>
 
