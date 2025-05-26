@@ -51,6 +51,8 @@
 		background: var(--button-primary-color);
 		color: var(--text-primary-color);
 		text-transform: capitalize;
+		transition: background-color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+		will-change: background-color;
 
 		@media (width >= 768px) {
 			font-size: 16rem;
@@ -58,6 +60,11 @@
 		}
 
 		&:hover {
+			background: var(--button-secondary-color);
+			color: var(--text-secondary-color);
+		}
+
+		&:focus {
 			background: var(--button-secondary-color);
 			color: var(--text-secondary-color);
 		}
