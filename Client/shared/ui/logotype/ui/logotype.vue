@@ -19,9 +19,9 @@
 	<a :href="href">
 		<svg
 			v-if="size === 'small'"
-			class="logotype"
 			fill="none"
 			height="48"
+			style="display: block"
 			viewBox="0 0 48 48"
 			width="48"
 			xmlns="http://www.w3.org/2000/svg"
@@ -31,9 +31,9 @@
 		</svg>
 		<svg
 			v-else
-			class="logotype"
 			fill="none"
 			height="64"
+			style="display: block"
 			viewBox="0 0 64 64"
 			width="64"
 			xmlns="http://www.w3.org/2000/svg"
@@ -43,9 +43,3 @@
 		</svg>
 	</a>
 </template>
-
-<style scoped>
-	.logotype {
-		display: block;
-	}
-</style>

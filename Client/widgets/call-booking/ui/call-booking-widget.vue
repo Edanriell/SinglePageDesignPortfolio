@@ -22,13 +22,15 @@
 					{{ text }}
 				</p>
 			</div>
-			<Link
-				:href="linkHref"
-				class="call-booking__link"
-				primaryColor="#eb7565"
-				secondaryColor="#f6a560"
-				>Free Consultation</Link
-			>
+			<ClientOnly>
+				<Link
+					:href="linkHref"
+					class="call-booking__link"
+					primaryColor="#eb7565"
+					secondaryColor="#f6a560"
+					>Free Consultation</Link
+				>
+			</ClientOnly>
 		</div>
 	</section>
 </template>

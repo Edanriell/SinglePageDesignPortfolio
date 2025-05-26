@@ -85,9 +85,11 @@
 					{{ text }}
 				</p>
 				<div class="about-author__button-wrapper">
-					<Link :href="linkHref" primaryColor="#eb7565" secondaryColor="#f6a560"
-						>Free Consultation</Link
-					>
+					<ClientOnly>
+						<Link :href="linkHref" primaryColor="#eb7565" secondaryColor="#f6a560"
+							>Free Consultation</Link
+						>
+					</ClientOnly>
 				</div>
 			</figcaption>
 		</figure>
